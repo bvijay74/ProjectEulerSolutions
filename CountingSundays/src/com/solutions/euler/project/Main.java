@@ -10,11 +10,9 @@ public class Main {
         year = year.getNextYear();
         do {
             System.out.println(year.getYearNo());
-            for (MonthName m: MonthName.values())
-            {
+            for (MonthName m: MonthName.values()) {
                 Month month = year.getMonth(m);
-                if (month.getFirstDayOfMonth() == Day.SUNDAY)
-                {
+                if (month.getFirstDayOfMonth() == Day.SUNDAY) {
                     sundayCount++;
                     System.out.println(month.getMonthName().toString());
                 }
